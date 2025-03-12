@@ -1,0 +1,5 @@
+add_subdirectory(ChainOfResponsibility)
+add_subdirectory(CommandPattern)
+add_subdirectory(Observer)
+add_subdirectory(Strategy)
+add_subdirectory(Visitor)
