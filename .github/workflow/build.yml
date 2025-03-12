@@ -1,0 +1,17 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-on-ubuntu-16-04:
+
+    runs-on: ubuntu-16.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: build
+      run: mkdir -p build && cd build && rm -rf * && cmake .. && make
